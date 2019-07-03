@@ -1,17 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
-import BoardContainer from './components/boards/boardContainer';
+import App from './components/App';
+import store from './store';
+import { Provider } from 'react-redux';
 
-class App extends React.Component {
-    render() {
-      return (
-        <BoardContainer/>
-      );
-    }
-}
 
-ReactDOM.render(
-    <App />,
-    document.getElementById('root')
+
+ReactDOM.render( 
+  <Provider store={store}>
+    <App />
+  </Provider>, 
+  document.getElementById('root')
 );
