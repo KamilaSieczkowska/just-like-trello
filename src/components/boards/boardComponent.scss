@@ -1,8 +1,18 @@
+@import '../variables.scss';
+
 .board__wrapper {
     width: 300px;
-    min-height: 100px;
+    height: 100%;
     padding: 20px;
-    background: #ffbf69;
+    background: $color2;
     margin-right: 20px;
-    color: rgb(48, 48, 48);
+    margin-bottom: 20px;
+    color: $textColor;
+
+    .new__item {
+        min-height: 100px;
+        padding: 0;
+        background: transparent;
+        overflow: visible;
+    }
 }
